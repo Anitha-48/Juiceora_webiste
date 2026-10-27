@@ -16,6 +16,6 @@ Product and route pages remain available at `/#/juices`, `/#/about`, `/#/benefit
 
 ## GitHub Pages deployment
 
-The site is deployed from the Vite production build by `.github/workflows/deploy-pages.yml` to `https://anitha-48.github.io/Juiceora_webiste/`. Pushes to `main` trigger a new deployment.
+Set the repository's **Settings → Pages → Build and deployment → Source** to **GitHub Actions** once. The workflow `.github/workflows/deploy-pages.yml` then deploys the Vite production build to `https://anitha-48.github.io/Juiceora_webiste/` on every push to `main`.
 
 The homepage and juice catalog show eight fruit flavours. Cards use fruit photography or custom fruit illustrations (no bottle artwork behind the images) and enter with a staggered reveal.

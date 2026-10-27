@@ -12,6 +12,10 @@ The pomegranate video story replaces the four former homepage feature boxes. Its
 
 The scroll-controlled player is in `src/components/ScrollVideoScene.jsx`; GSAP ScrollTrigger is cleaned up when the component unmounts. Its `scrub: true` setting keeps each timeline locked to the scroll position without continuing to move after scrolling stops. Video seeks are coalesced while a decode is in progress, then the latest target is applied; the final seek tolerance is under half a 24 fps frame. The pomegranate story replaces the four home-page feature cards and uses `src/puplic/images/Pomegrant-animate-scroll.mp4`, a web-optimized copy with metadata at the start and keyframes every 0.5 seconds.
 
-Product and route pages remain available at `/juices`, `/about`, `/benefits` and `/contact`.
+Product and route pages remain available at `/#/juices`, `/#/about`, `/#/benefits` and `/#/contact`. Hash-based routing keeps direct links and refreshes working on GitHub Pages.
+
+## GitHub Pages deployment
+
+The site is deployed from the Vite production build by `.github/workflows/deploy-pages.yml` to `https://anitha-48.github.io/Juiceora_webiste/`. Pushes to `main` trigger a new deployment.
 
 The homepage and juice catalog show eight fruit flavours. Cards use fruit photography or custom fruit illustrations (no bottle artwork behind the images) and enter with a staggered reveal.

@@ -8,9 +8,7 @@ import ProductModal from '../components/ProductModal.jsx'
 import ScrollReveal from '../components/ScrollReveal.jsx'
 import pomegranateVideo from '../puplic/images/Pomegrant-animate-scroll.mp4'
 import blueberryVideo from '../puplic/images/blue berry-animate-scroll.mp4'
-
 let homeIntroShown = false
-
 const fruitBenefits = [
   { icon: Sun, title: 'Naturally vibrant', description: 'Fruit brings bright colour and a naturally lively taste to every day.' },
   { icon: Droplet, title: 'A refreshing choice', description: 'Water-rich fruits can be part of a refreshing way to enjoy your day.' },

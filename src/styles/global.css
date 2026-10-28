@@ -12,7 +12,7 @@ a{color:inherit}:focus-visible{outline:3px solid var(--g);outline-offset:3px}.sk
 .kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;color:var(--od)}.wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em}.w{display:inline-block}
 .hero-sub{max-width:34ch;font-size:1.2rem}.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:1.4rem}.hero-art{position:relative;height:min(75vh,640px)}
 .hero-video{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;border-radius:24px}
-.scroll-story-video{display:block;width:100%;height:100%;object-fit:contain}
+.scroll-story-video{display:block;width:100%;height:100%;min-width:0;min-height:0;max-height:100%;object-fit:contain}
 .hero::after{content:"";position:absolute;z-index:2;left:0;right:0;bottom:0;height:4px;background:linear-gradient(to right,var(--od) 0 0) left/100% 100% no-repeat;transform:scaleX(var(--video-progress,0));transform-origin:left;pointer-events:none}
 .hero-copy{position:relative;z-index:3}
 .scrollcue{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:.85rem;margin:0}
@@ -168,6 +168,12 @@ input,textarea{max-width:100%}
   .hero-btns .btn{width:100%;text-align:center}
   .steps li{padding:16px}
   .collection-copy h2{font-size:1.9rem}
+}
+
+@media(max-width:1100px){
+  .hero-video-hero .scroll-story-video,
+  .pomegranate-story-video .scroll-story-video,
+  .blueberry-story-video .scroll-story-video{object-fit:cover;object-position:center}
 }
 
 @media(max-height:500px) and (orientation:landscape) and (max-width:800px){
